@@ -102,6 +102,16 @@ class Media extends AbstractEntity
     protected $deleted;
 
     /**
+     * @var \Kunstmaan\MediaBundle\Entity\Media
+     *
+     * @ORM\ManyToOne(targetEntity="Kunstmaan\MediaBundle\Entity\Media")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="custom_thumbnail_id", referencedColumnName="id", nullable=true)
+     * })
+     */
+    private $customThumbnail;
+
+    /**
      * constructor
      */
     public function __construct()
@@ -409,6 +419,16 @@ class Media extends AbstractEntity
     public function setUrl($url)
     {
         $this->url = $url;
+    }
+
+    public function getCustomThumbnail()
+    {
+        return $this->customThumbnail;
+    }
+
+    public function setCustomThumbnail($customThumbnail)
+    {
+        $this->customThumbnail = $customThumbnail;
     }
 
     /**

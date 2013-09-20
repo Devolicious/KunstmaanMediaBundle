@@ -26,6 +26,16 @@ class RemoteVideoHelper
         $this->media->setContentType(RemoteVideoHandler::CONTENT_TYPE);
     }
 
+    public function getCustomThumbnail()
+    {
+        return $this->media->getCustomThumbnail();
+    }
+
+    public function setCustomThumbnail($customThumbnail)
+    {
+        $this->media->setCustomThumbnail($customThumbnail);
+    }
+
     /**
      * @return string
      */

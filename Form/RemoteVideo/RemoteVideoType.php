@@ -31,6 +31,8 @@ class RemoteVideoType extends AbstractType
             ->add('code', 'text')
             ->add('type', 'choice', array(
                 'choices'   => array('youtube' => 'youtube', 'vimeo' => 'vimeo', 'dailymotion' => 'dailymotion')));
+
+        $builder->add('customThumbnail', 'media', array('pattern' => 'KunstmaanMediaBundle_chooser', 'required' => false));
     }
 
     /**
