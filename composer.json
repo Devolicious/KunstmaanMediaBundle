@@ -21,8 +21,8 @@
         "knplabs/knp-gaufrette-bundle": "*",
         "gedmo/doctrine-extensions": "*",
         "sensio/framework-extra-bundle": "*",
-        "kunstmaan/admin-bundle": "self.version",
-        "kunstmaan/utilities-bundle": "self.version"
+        "kunstmaan/admin-bundle": "dev-master",
+        "kunstmaan/utilities-bundle": "dev-master"
     },
     "minimum-stability": "dev",
     "autoload": {
